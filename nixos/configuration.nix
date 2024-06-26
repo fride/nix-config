@@ -105,16 +105,16 @@
      fish
   ];
   #Emacs Setup
-  services.emacs {
-    package = pkgs.emacs-unstable;
+  services.emacs = {
+    package = pkgs.emacs;
     enable = true;
   };
   # I'm not sure this is a good idea?
-  nixpkgs.overlays = [
-    (import (builtins.fetchTarball {
-      url = "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
-    }))
-  ];
+  #nixpkgs.overlays = [
+  #  (import (builtins.fetchTarball {
+  #    url = "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
+  #  }))
+  #];
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
