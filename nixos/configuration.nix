@@ -106,7 +106,7 @@
   ];
   #Emacs Setup
   services.emacs = {
-    package = pkgs.emacs;
+    package = pkgs.emacs-unstable;
     enable = true;
   };
   # I'm not sure this is a good idea?
