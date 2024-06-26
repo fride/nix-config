@@ -78,16 +78,16 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.jgf = {
-    isNormalUser = true;
-    description = "Jan Geissler Friderici";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-    	thunderbird
-        obsidian
-    ];
-  };
+  # # Define a user account. Don't forget to set a password with ‘passwd’.
+  # users.users.jgf = {
+  #   isNormalUser = true;
+  #   description = "Jan Geissler Friderici";
+  #   extraGroups = [ "networkmanager" "wheel" ];
+  #   packages = with pkgs; [
+  #   	thunderbird
+  #       obsidian
+  #   ];
+  # };
 
   # Install firefox.
   programs.firefox.enable = true;
