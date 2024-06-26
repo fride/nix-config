@@ -20,4 +20,11 @@
       config.allowUnfree = true;
     };
   };
+
+  # Die NIX Dokumentation ist echt UNGLAUBLICH UEBEL!
+  nixpkgs.overlays = [
+    (import (builtins.fetchTarball {
+      url = "https://github.com/nix-community/emacs-overlay/archive/master.tar.gz";
+    }))
+  ];
 }
