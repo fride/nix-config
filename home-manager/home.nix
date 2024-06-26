@@ -18,8 +18,8 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./nvim.nix
-    ./emacs.nix
-    ./nvim.nix
+    #./emacs.nix
+    #./nvim.nix
   ];
 
   nixpkgs = {
